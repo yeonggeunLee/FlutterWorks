@@ -26,11 +26,11 @@ class _HomePageState extends State<HomePage> {
     preJump();
     Timer.periodic(Duration(milliseconds: 50), (timer) {
       time += 0.05;
-      height = -4.9 * time + 5 * time;
+      height = -4.9 * time * time + 5 * time;
 
       if(initialHeight - height > 1){
         setState(() {
-          marioY = -1;
+          marioY = 1;
         });
       } else{
         setState(() {

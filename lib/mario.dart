@@ -6,7 +6,7 @@ class MyMario extends StatelessWidget {
       return Container(
         width: 50,
         height: 50,
-        child: Image.asset('F:/flutterwork/mario/lib/images/standingMario.png'),
+        child: Image.asset('lib/images/standingMario.png'),
       );
   }
 }
